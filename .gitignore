@@ -1,0 +1,226 @@
+# =============================================================================
+# TrackHelp-RAG-FastAPI Project - .gitignore
+# =============================================================================
+
+# --- Environment Variables ---
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# --- Python ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# --- Virtual Environments ---
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+pipenv/
+.pipenv/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# --- macOS ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# --- Linux ---
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# PROJECT-SPECIFIC EXCLUSIONS
+# =============================================================================
+
+# --- Vector Database & Embeddings ---
+chroma_store/
+chromadb/
+*.db
+*.sqlite
+*.sqlite3
+faiss_index/
+pinecone_index/
+
+# --- File Uploads & Processing ---
+uploads/
+temp/
+tmp/
+user_uploads/
+processed_documents/
+*.pdf
+*.doc
+*.docx
+*.txt
+*.csv
+*.xlsx
+*.json
+
+# --- Model Cache & Downloads ---
+models/
+model_cache/
+huggingface_cache/
+transformers_cache/
+.cache/
+ollama_models/
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+log/
+app.log
+debug.log
+error.log
+access.log
+uvicorn.log
+
+# --- Security & Secrets ---
+secrets/
+private_keys/
+certificates/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+config/secrets/
+
+# --- API Documentation (if auto-generated) ---
+docs/build/
+site/
+
+# --- Docker ---
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# --- Kubernetes ---
+*.kubeconfig
+k8s-secrets/
+
+# --- Monitoring & Metrics ---
+prometheus_data/
+grafana_data/
+metrics/
+
+# --- Backup Files ---
+*.backup
+*.bak
+*.tmp
+backup/
+backups/
+
+# --- Performance & Profiling ---
+*.prof
+*.pstats
+profile_results/
+
+# --- AI/ML Specific ---
+wandb/
+mlruns/
+artifacts/
+checkpoints/
+experiments/
+tensorboard_logs/
+.wandb/
+
+# --- Package Managers ---
+# pip
+pip-wheel-metadata/
+
+
+# --- Static Analysis ---
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# --- OS Generated ---
+.tmp/
+node_modules/  # If you use any Node.js tools
+
+# Include small test files if needed
+!tests/fixtures/small_test.pdf
